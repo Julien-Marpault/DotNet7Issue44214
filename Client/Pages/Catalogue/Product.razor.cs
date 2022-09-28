@@ -39,9 +39,7 @@ public partial class Product : ComponentBase
 
     private void AddToCart()
     {
-        Console.WriteLine("AddToCart()");
-        Console.WriteLine($"Cart : {Cart.Id}");
-        Cart.Add(article, 1);
+      
     }
 
     private void SelectCurrentArticle()

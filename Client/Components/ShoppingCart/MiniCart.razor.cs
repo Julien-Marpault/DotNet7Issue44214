@@ -11,7 +11,6 @@ public partial class MiniCart : ComponentBase
     protected override void OnInitialized()
     {
         Console.WriteLine("MiniCart Cart.OnChange");
-        Cart.OnChange += Cart_OnChange;
     }
 
     private void Cart_OnChange(string arg1, object arg2)
@@ -20,5 +19,5 @@ public partial class MiniCart : ComponentBase
     }
 
     public void RemoveEntry(DocumentEntry entry)
-        => Cart.RemoveEntry(entry);
+    { }
 }
