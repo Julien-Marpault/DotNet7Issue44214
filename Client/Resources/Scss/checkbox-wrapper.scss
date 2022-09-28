@@ -1,0 +1,36 @@
+﻿@import 'Variables.scss';
+
+input[type=checkbox]:not(:checked),
+input[type=checkbox]:checked {
+    display: none;
+
+    & + label {
+        position: relative;
+        left: 1.5em;
+        margin: 0px 0px $margin 0px;
+        width: 100%;
+        cursor: pointer;
+        pointer-events: all;
+        font-size: 1em;
+        color: $font-standard-color;
+        top: 0px;
+
+        &:after {
+            position: absolute;
+            content: '';
+            width: 0.75em;
+            height: 0.75em;
+            border: 1px solid $font-standard-color;
+            top: 0.25em;
+            left: -1.5em;
+        }
+    }
+}
+
+input[type=checkbox]:checked {
+    & + label {
+        &:after {
+            background: $btn-ok-background;
+        }
+    }
+}

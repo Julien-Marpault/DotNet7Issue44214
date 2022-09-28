@@ -1,0 +1,36 @@
+﻿<div class="funnel-breadcrumb-wrapper">
+    <div class="funnel-breadcrumb">
+        @foreach (KeyValuePair<int, string> step in Steps)
+        {
+            if (!step.Equals(Steps.First()))
+            {
+                <hr class="@(activeStep>=step.Key?"active":string.Empty)" />
+            }
+            <div class="@(activeStep>=step.Key?"active":string.Empty)">@step.Value</div>
+        }
+    </div>
+</div>
+<CascadingValue TValue="int" Value="activeStep" Name="ActiveStep">
+    <CascadingValue TValue="Action<int>" Value="stepChanged" Name="StepChanged">
+        @ChildContent
+    </CascadingValue>
+</CascadingValue>
+
+
+@code {
+    [Parameter] public Dictionary<int, string> Steps { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
+    private int activeStep = 1;
+    private event Action<int> stepChanged;
+
+    protected override void OnInitialized()
+    {
+        stepChanged += SetStep;
+    }
+    private void SetStep(int step)
+    {
+        activeStep = step;
+        Console.WriteLine($"SetStep : activeStep = {activeStep}");
+        StateHasChanged();
+    }
+}

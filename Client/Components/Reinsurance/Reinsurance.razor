@@ -1,0 +1,21 @@
+﻿@namespace Graphene.Front.Client.Components
+<CascadingValue Value="this" TValue="Reinsurance">
+    <div class="reinsurance">
+        @if (ChildContent != null)
+        {
+            @ChildContent
+        }
+
+        @foreach (ReinsuranceItem item in items)
+        {
+            <section>
+                <div class="title">
+                    @item.Title
+                </div>
+                <div class="content">
+                    @item.ChildContent
+                </div>
+            </section>
+        }
+    </div>
+</CascadingValue>

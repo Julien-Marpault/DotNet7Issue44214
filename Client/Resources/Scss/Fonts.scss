@@ -1,0 +1,23 @@
+﻿@import 'Variables.scss';
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url("/fonts/CenturyGothicRegular.eot") format('embedded-opentype'), url("/fonts/CenturyGothicRegular.ttf") format('truetype')
+}
+
+* {
+    //font: 100 1rem "Century Gothic";
+    font: 100 $font-size "Segoe UI";
+    color: $text-color;
+    letter-spacing: 0.15rem;
+}
+
+h1 {
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+h2 {
+    font-size: 1.5rem;
+}

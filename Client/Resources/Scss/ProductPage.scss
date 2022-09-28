@@ -1,0 +1,131 @@
+﻿@import "Variables.scss";
+
+.product {
+    display: flex;
+    flex-direction: row;
+    //justify-content: flex-end;
+    //justify-content: center;
+    //align-items: center;
+    //margin-inline: 3rem 12rem;
+    width: 100%;
+
+    .product-description {
+        display: flex;
+        flex-direction: column;
+        width: 67%;
+
+        .image {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .product-properties-wrapper {
+        margin-inline: 3rem 0;
+        width: 33%;
+
+        .product-properties {
+            position: sticky;
+            top: 5rem;
+
+            h1 {
+                margin-block-start: 0;
+            }
+
+            .sales-price {
+                color: $text-highlight;
+                font-size: 1.5rem;
+            }
+
+            .short-description {
+                margin-block: 2rem;
+            }
+
+            .properties {
+                margin-block: 3rem;
+            }
+
+            ul.properties-wrapper {
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    &.property {
+                        &.color {
+                            width: calc(66% - 1rem);
+                        }
+
+                        &.size {
+                            width: calc(33% - 1rem);
+                            position: relative
+                        }
+                    }
+                }
+
+                div {
+                    &.property {
+                        &.size {
+                            width: 100%;
+                            position: absolute;
+                            background: rgb(255,255,255);
+                        }
+                    }
+                }
+            }
+
+            .delivery {
+                margin-block: 2rem;
+                font-size: 0.8rem;
+
+                strong {
+                    font-weight: 400;
+                }
+            }
+
+            ul.strong-points {
+                margin-block: 1rem;
+
+                li {
+                    padding-block: 1rem;
+                    padding-inline-start: 0.5rem;
+                    font-size: 0.8rem;
+                    border-bottom: 1px solid $border-blue-light-color;
+                }
+            }
+        }
+    }
+
+    .product-details {
+        display: flex;
+        flex-direction: row;
+        //width: 53.5rem;
+        width: 100%;
+        margin-block: 3rem;
+        padding: 3rem;
+        border: 1px solid $border-color;
+
+        h2 {
+            font-weight: 400;
+        }
+
+        .left-panel {
+            width: 60%;
+        }
+
+        .right-panel {
+            width: fit-content;
+
+            ul {
+                width: 100%;
+
+                li {
+                    justify-content: space-between;
+                    display: flex;
+                }
+            }
+        }
+    }
+}

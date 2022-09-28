@@ -1,0 +1,80 @@
+﻿@using Graphene.Front.Client.Models
+@page "/catalogue/{Category}/{Slug}"
+
+<div class="content">
+    @if (isLoading)
+    {
+        <Loader />
+    }
+    else
+    {
+        <BreadCrumb Separator=" > " Entries="articleGroup.BreadCrumbEntries" />
+        <div class="product">
+            <section class="product-description">
+
+                <div class="image">
+                    <ProductImageGallery Visuals="article.Visuals" />
+                </div>
+                <section class="product-details">
+                    <section class="left-panel">
+                        <h2>On en cause</h2>
+                    </section>
+                    <section class="right-panel">
+                        <h2>Caractéristiques</h2>
+                        <ul>
+                            @foreach (var item in article.Properties)
+                            {
+                                <li>
+                                    <span>
+                                        @item.PropertyType.Id :
+                                    </span>
+                                    <span>
+                                        @item.PropertyValue.Value
+                                    </span>
+                                </li>
+                            }
+                        </ul>
+                    </section>
+                </section>
+            </section>
+            <section class="product-properties-wrapper">
+                <div class="product-properties">
+                    <h1>@article.Title</h1>
+                    <div class="sales-price">
+                        @article.Price.ToString("c2", new CultureInfo("fr-FR"))
+                    </div>
+                    <div class="short-description">
+                        @article.Description
+                    </div>
+                    <div class="properties">
+                        <ul class="properties-wrapper">
+
+                            @foreach (IGrouping<string, ArticleProperty> group in propertyGroups)
+                            {
+                                if (group.Any(s => s.PropertyType.IsVariant == true))
+                                {
+                                    <li class="property @group.Key">
+                                        <PropertySelector Properties="group" SelectedProperties="selectedProperties" OnPropertyChange="UpdateActiveArticle" />
+                                    </li>
+                                }
+                            }
+                        </ul>
+                    </div>
+                    <div class="delivery">
+                        Expédition sous 5 jours ouvrés
+                    </div>
+                    <button @onclick="AddToCart" class="cta full-width">Ajouter au panier</button>
+                    <ul class="strong-points">
+                        <li>
+                            Artisanat Français
+                        </li>
+                        <li>
+                            Coton recyclé
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+    }
+</div>

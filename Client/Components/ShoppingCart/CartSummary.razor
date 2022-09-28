@@ -1,0 +1,44 @@
+﻿@*
+<aside>
+    <div>
+        <span>
+            sous-total:
+        </span>
+        <span>
+            @Cart.Entries.Sum(entry=>entry.Quantity*entry.Article.Price).ToString("c2",new CultureInfo("fr-FR"))
+        </span>
+    </div>
+    <div>
+        <span>
+            livraison:
+        </span>
+        <span>
+            @Cart.ShippingFees.ToString("c2",new CultureInfo("fr-FR"))
+        </span>
+    </div>
+    <div>
+        <span>
+            total:
+        </span>
+        <span>
+            @((Cart.ShippingFees+Cart.Entries.Sum(entry=>entry.Quantity*entry.Article.Price)).ToString("c2",new CultureInfo("fr-FR")))
+        </span>
+    </div>
+    <a class="cta large" href="/livraison">
+        Valider mon panier
+    </a>
+</aside>
+
+@code {
+    [CascadingParameter] public Cart Cart { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Cart.OnChange += Cart_OnChange;
+    }
+    private void Cart_OnChange(string arg1, object arg2)
+    {
+        StateHasChanged();
+    }
+}
+*@

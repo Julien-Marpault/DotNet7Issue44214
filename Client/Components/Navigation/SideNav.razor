@@ -1,0 +1,42 @@
+﻿<nav class="side-nav">
+    @ChildContent
+
+    <NavLink class="side-nav-entry" Match="NavLinkMatch.All" ActiveClass="active" href="/catalogue/bijoux">
+        <span>Bijoux</span>
+    </NavLink>
+
+    <NavLink class="side-nav-entry" Match="NavLinkMatch.All" ActiveClass="active" href="/catalogue/nouveautes">
+        <span>Nouveautés</span>
+    </NavLink>
+    <NavLink class="side-nav-entry" Match="NavLinkMatch.All" ActiveClass="active" href="/catalogue/mariages">
+        <span>Mariages</span>
+    </NavLink>
+    <NavLink class="side-nav-entry" Match="NavLinkMatch.All" ActiveClass="active" href="/catalogue/macrame-mural">
+        <span>Macramé mural</span>
+    </NavLink>
+    <NavLink class="side-nav-entry" Match="NavLinkMatch.All" ActiveClass="active" href="/catalogue/decoration-d-interieur">
+        <span>Décoration d'intérieur</span>
+    </NavLink>
+    <NavLink class="side-nav-entry" Match="NavLinkMatch.All" ActiveClass="active" href="/catalogue/porte-cles-et-accessoires">
+        <span>Porte-clés et accessoires</span>
+    </NavLink>
+    <NavLink class="side-nav-entry" Match="NavLinkMatch.All" ActiveClass="active" href="/catalogue/chambre-d-enfant">
+        <span>Chambre d'enfant</span>
+    </NavLink>
+    @* <NavLink class="side-nav-entry" Match="NavLinkMatch.All" ActiveClass="active" href="/catalogue/cuisine-et-table">
+    <span>Cuisine et table</span>
+    </NavLink>*@
+    @*    <NavLink class="side-nav-entry" Match="NavLinkMatch.All" ActiveClass="active" href="/catalogue/lifestyle">
+    <span>Lifestyle</span>
+    </NavLink>*@
+    @*     <NavLink class="side-nav-entry" Match="NavLinkMatch.All" ActiveClass="active" href="/catalogue/suspensions-plantes">
+    <span>Suspensions plantes</span>
+    </NavLink>*@
+
+
+
+</nav>
+
+@code {
+    [Parameter] public RenderFragment ChildContent { get; set; }
+   }

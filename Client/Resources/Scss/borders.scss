@@ -1,0 +1,76 @@
+﻿@import "Variables.scss";
+
+/*.border-right,
+.border-left,
+.border-top,
+.border-bottom {
+    border-style: solid;
+    border-color: $border-color;
+}
+
+.border-right-dark,
+.border-left-dark,
+.border-top-dark,
+.border-bottom-dark {
+    border-style: solid;
+    border-color: $border-color-dark;
+}*/
+
+.border-right {
+    border-right: 1px solid $border-color;
+}
+
+.border-right-dark {
+    border-right: 1px solid $border-color-dark;
+}
+
+.border-left {
+    border-left: 1px solid $border-color;
+}
+
+.border-left-dark {
+    border-left: 1px solid $border-color-dark;
+}
+
+.border-top {
+    border-top: 1px solid $border-color;
+}
+
+.border-top-dark {
+    border-top: 1px solid $border-color-dark;
+}
+
+.border-bottom {
+    border-bottom: 1px solid $border-color;
+}
+
+.border-bottom-dark {
+    border-bottom: 1px solid $border-color-dark;
+}
+
+.selected-border-right,
+.selected-border-left,
+.selected-border-top,
+.selected-border-bottom {
+    border-color: $navbar-background;
+}
+
+.selected-border-right {
+    border-right-width: 3px;
+    border-right-style: solid;
+}
+
+.selected-border-left {
+    border-left-width: 3px;
+    border-left-style: solid;
+}
+
+.selected-border-top {
+    border-top-width: 3px;
+    border-top-style: solid;
+}
+
+.selected-border-bottom {
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}

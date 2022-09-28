@@ -1,0 +1,23 @@
+﻿@import "Variables.scss";
+
+.cta {
+    background: $cta-color; // $gold;
+    color: white;
+    padding: 0.5rem;
+    border: 1px solid $cta-color; // $gold;
+    justify-content: center;
+    text-align: center;
+
+    &:hover {
+        background: white;
+        color: $cta-color; // $gold;
+    }
+
+    &.large {
+        width: 15rem;
+    }
+
+    &.full-width {
+        width: 100%;
+    }
+}

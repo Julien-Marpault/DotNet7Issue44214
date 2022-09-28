@@ -1,0 +1,51 @@
+﻿@using System.Linq.Expressions
+
+<div @attributes="AdditionalAttributes" class="input-wrapper @(string.Join(' ', AdditionalAttributes["class"]))">
+    <input type="@Type" value="@Value" placeholder="@PlaceHolder" @onchange="(ChangeEventArgs  evt)=>CurrentValue=evt?.Value?.ToString()" />
+    @if (Icon != null)
+    {
+        @Icon
+    }
+
+</div>
+
+@code {
+    [Parameter] public string PlaceHolder { get; set; }
+    [Parameter] public string Type { get; set; }
+    [Parameter] public RenderFragment? Icon { get; set; }
+    [Parameter] public string Value { get; set; }
+    [Parameter] public EventCallback<string> ValueChanged { get; set; }
+    [Parameter] public Expression<Func<string>>? ValueExpression { get; set; }
+    [Parameter(CaptureUnmatchedValues = true)] public IReadOnlyDictionary<string, object>? AdditionalAttributes { get; set; }
+    [Parameter] public EventCallback<ChangeEventArgs> OnInput { get; set; }
+    [Parameter] public EventCallback<ChangeEventArgs> OnChange { get; set; }
+
+    [Inject] private IHttpClientFactory HttpClientFactory { get; set; }
+
+    protected string CurrentValue
+    {
+        get => Value;
+        set
+        {
+            bool hasChanged = !EqualityComparer<string>.Default.Equals(value, Value);
+            if (hasChanged)
+            {
+                Value = value;
+                _ = ValueChanged.InvokeAsync(Value);
+            }
+        }
+    }
+
+    private async Task OnInputEvent(ChangeEventArgs args)
+    {
+
+        if (OnInput.HasDelegate)
+            await OnInput.InvokeAsync(args);
+    }
+
+    private async Task OnChangeEvent(ChangeEventArgs args)
+    {
+        if (OnChange.HasDelegate)
+            await OnChange.InvokeAsync(args);
+    }
+}

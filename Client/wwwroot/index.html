@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Philame Créations</title>
+    <base href="/" />
+    <link href="css/philame.css" rel="stylesheet" />
+    <link href="manifest.json" rel="manifest" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+    <link rel="stylesheet" href="_content/Graphene.Components.Modal/styles.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="js/checkout.js" defer></script>
+</head>
+
+<body>
+    <div id="app" class="top-nav-first">
+        <div class="loader">
+            <img src="loader.svg" />
+            <div class="loader-text">Chargement en cours</div>
+        </div>
+    </div>
+    <script src="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication/AuthenticationService.js"></script>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="_content/Graphene.Components.Carousel/script.min.js"></script>
+    <!--<script src="js/graphene-interop.js"></script>-->
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/25524601.js"></script>
+</body>
+</html>

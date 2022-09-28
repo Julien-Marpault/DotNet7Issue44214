@@ -1,0 +1,10 @@
+﻿@using Graphene.Front.Client.Models
+@foreach (Visual item in Visuals)
+{
+    <img src="@($"/medias/{item.Id.ToString("N").ToUpperInvariant()}.jpg")" />
+}
+
+@code {
+    [Parameter]
+    public ICollection<Visual> Visuals { get; set; }
+}

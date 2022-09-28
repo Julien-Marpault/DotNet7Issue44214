@@ -1,0 +1,42 @@
+﻿@import 'Variables.scss';
+
+input[type=radio]:not(:checked),
+input[type=radio]:checked {
+    display: none;
+
+    & + label {
+        //left: 2rem;
+        position: relative;
+        margin: 0px 0px $margin 0px;
+        width: 100%;
+        cursor: pointer;
+        pointer-events: all;
+        font-size: 1em;
+        color: $font-standard-color;
+        top: 0px;
+
+        &:after {
+            position: absolute;
+            content: '';
+            width: 0.55em;
+            height: 0.55em;
+            top: 0.45em;
+            left: -1.5em;
+            border-radius: 50%;
+            //border: 1px solid $font-standard-color;
+            border: none;
+            outline-color: $dark-gold;
+            outline-width: 1px;
+            outline-offset: 0.2rem;
+            outline-style: solid;
+        }
+    }
+}
+
+input[type=radio]:checked {
+    & + label {
+        &:after {
+            background: $btn-ok-background;
+        }
+    }
+}

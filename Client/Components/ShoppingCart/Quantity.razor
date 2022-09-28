@@ -1,0 +1,55 @@
+﻿@using System.Linq.Expressions
+<span class="modify">
+
+    <span class="minus" @onclick=MinusQuantity>
+        @if (Minus != null)
+        {
+            @Minus
+        }
+        else
+        {
+            @("-")
+        }
+    </span>
+
+    <span class="value">
+        @Value
+    </span>
+    <span class="plus" @onclick=PlusQuantity>
+        @if (Minus != null)
+        {
+            @Minus
+        }
+        else
+        {
+            @("+")
+        }
+    </span>
+</span>
+@code {
+    [Parameter] public int Value { get; set; }
+    //[Parameter] public EventCallback<int> ValueChanged { get; set; }
+    //[Parameter] public Expression<Func<int>> ValueExpression { get; set; }
+    [Parameter] public EventCallback<int> OnChange { get; set; }
+    [Parameter] public RenderFragment Minus { get; set; }
+    [Parameter] public RenderFragment Plus { get; set; }
+    private async Task MinusQuantity()
+    {
+        if (Value >= 2)
+            --Value;
+        else
+            Value = 1;
+        if (OnChange.HasDelegate)
+            await OnChange.InvokeAsync(Value);
+    }
+
+    private async Task PlusQuantity()
+    {
+        if (Value < int.MaxValue)
+            ++Value;
+        else
+            Value = int.MaxValue;
+        if (OnChange.HasDelegate)
+            await OnChange.InvokeAsync(Value);
+    }
+}

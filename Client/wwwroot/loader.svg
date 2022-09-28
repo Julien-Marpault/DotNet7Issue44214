@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 291 291" style="enable-background:new 0 0 291 291;" xml:space="preserve">
+<style type="text/css">
+    .st0 {
+        fill: #2A3E59;
+        stroke: url(#SVGID_1_);
+        stroke-miterlimit: 10;
+    }
+
+    .st1 {
+        fill: none;
+        stroke: url(#SVGID_2_);
+        stroke-width: 4;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+    }
+
+    .st2 {
+        fill: none;
+        stroke: url(#SVGID_3_);
+        stroke-width: 2;
+        stroke-miterlimit: 10;
+    }
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="209.4224" y1="147.0336" x2="218.1043" y2="147.0336">
+<stop offset="7.614213e-03" style="stop-color:#54728C;stop-opacity:0.5" />
+<stop offset="1" style="stop-color:#2A3E59" />
+</linearGradient>
+<circle class="st0" cx="213.76" cy="147.03" r="3.84" />
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="135.8957" y1="179.7905" x2="205.4209" y2="179.7905">
+<stop offset="7.614213e-03" style="stop-color:#54728C;stop-opacity:0.5" />
+<stop offset="1" style="stop-color:#2A3E59" />
+</linearGradient>
+<path class="st1" d="M203.42,150.87c-3.23,1.03-6.51,2.26-9.82,3.71c-29.2,12.83-46.36,36.97-55.71,54.12" />
+<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="66.5718" y1="131.1261" x2="187.2647" y2="131.1261">
+<stop offset="0" style="stop-color:#54728C;stop-opacity:0.5" />
+<stop offset="1" style="stop-color:#2A3E59" />
+</linearGradient>
+<path class="st2" d="M180.6,149.4c2.64-4.94,6.79-14.51,5.37-26.06c-2.84-23.09-26.76-44.83-46.36-40.19
+	c-9.57,2.26-16.97,10.55-20.1,18.9c-10.31,27.58,27.06,69.95,37.8,62.28c10.75-7.67,7.3-31.82-20.86-53.83s-56.7-11.5-66.09,8.27
+	c-7.78,16.37,1.93,36.56,12.93,47.15c16.89,16.26,45.82,18.57,71.63,4.78" />
+</svg>

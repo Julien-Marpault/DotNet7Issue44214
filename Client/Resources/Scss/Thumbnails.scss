@@ -1,0 +1,91 @@
+﻿@import 'Variables.scss';
+
+.catalog {
+    display: flex;
+    justify-content: space-around;
+}
+
+.thumbnail {
+    //width: 30%;
+    display: inline-block;
+    margin-top: 2rem;
+    position: relative;
+    //filter: grayscale(100%);
+
+    .polaroid {
+        background: #fff;
+        padding: 1rem;
+        box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+        position: relative;
+
+        &:before {
+            transform: rotate(-6deg);
+            content: '';
+            position: absolute;
+            z-index: -1;
+            //transition: all 0.35s;
+            height: 20%;
+            width: 47%;
+            bottom: 30px;
+            left: 12px;
+            box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+        }
+
+        &:after {
+            transform: rotate(6deg);
+            content: '';
+            position: absolute;
+            z-index: -1;
+            //transition: all 0.35s;
+            height: 20%;
+            width: 47%;
+            bottom: 30px;
+            right: 12px;
+            box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+        }
+
+        & > img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .icons {
+            position: absolute;
+            right: 0.5rem;
+            padding: 0.5rem;
+            display: flex;
+            z-index: 10;
+
+            .addToCart, .addToWishlist {
+                svg {
+                    height: 1rem;
+                    padding-inline-start: 1rem;
+                }
+            }
+        }
+
+        .caption {
+            height: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            .line1 {
+                font-size: 0.8rem;
+                font-weight: 600;
+                color: gray;
+            }
+
+            .line2 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-block-start: 0.75rem;
+            }
+            //.title {
+            .price {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}

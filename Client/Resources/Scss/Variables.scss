@@ -1,0 +1,76 @@
+﻿//#1 - Colors
+$black-32: rgb(32,32,32);
+$gray-128: rgb(128,128,128);
+$gray-192: rgb(192,192,192);
+$gray-230: rgb(230,230,230);
+$gold: rgb(194, 157, 111);
+$dark-gold: rgb(209, 170, 101);
+$dark-red: rgb(192,0,0);
+$dark-blue: rgb(42,62,89);
+/*$cta-color: rgb(241,186,58);*/
+$cta-color: $dark-blue;
+
+//$text-color: $black-32;
+$text-highlight: $cta-color;
+$text-color: $dark-blue;
+
+$font-size: 1rem;
+$font-standard-color: $text-color;
+$background-color: white;
+$border-color: $gray-192;
+$border-light-color: $gray-230;
+$border-color-dark: rgb(160,160,160);
+$border-blue-color: $dark-blue;
+$border-blue-light-color: desaturate(lighten($dark-blue,40%),20%);
+$scrollbar-thumb: $gray-192;
+$font-placeholder-color: $gray-192;
+$panels-background-color: white;
+$error-color: $dark-red;
+
+$btn-ok-background: $cta-color; // $gold;
+$btn-ok-hover-background: $cta-color; // $gold;
+$btn-ok-color: white;
+$btn-background: $cta-color; // $gold;
+$btn-disabled-background: $gray-230;
+$navbar-background: $cta-color; // $gold;
+$scrollbar-thumb: $cta-color; // $dark-gold;
+$scrollbar-background-color: white;
+
+$bold: 500;
+
+//#2 Margins
+/*$margin-l: 3rem;
+$margin: 1.5rem;
+$margin-s: 1rem;
+$margin-xs: 0.5rem;*/
+
+$margin: 1rem;
+$margin-xxl: $margin*4;
+$margin-xl: $margin*3;
+$margin-l: $margin*2;
+$margin-s: $margin*2/3;
+$margin-xs: $margin/3;
+$gutter: $margin/2;
+
+$cart-price-width: 12rem;
+$cart-quantity-plus-color: $dark-gold;
+$cart-quantity-minus-color: $dark-gold;
+
+$max-input-width: 30rem;
+
+//Top Nav
+$nav-icon-color: $text-color;
+$main-nav-top-padding: 1rem;
+$main-nav-right-padding: 1rem;
+$main-nav-bottom-padding: 7rem;
+$main-nav-left-padding: 1rem;
+// Side Nav
+$logo-padding: 0 0 2rem 0;
+
+$side-nav-padding: 1rem;
+$side-nav-width: 20rem;
+$side-nav-entry-line-height: 4rem;
+
+// HX
+$h1-font-size: 1.5rem;
+$h1-font-weight: 400;

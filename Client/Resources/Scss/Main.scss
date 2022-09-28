@@ -1,0 +1,242 @@
+﻿@import 'Variables.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, #app, main {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#app {
+    display: flex;
+    overflow: hidden;
+
+    &.side-nav-first {
+        flex-direction: row;
+    }
+
+    &.top-nav-first {
+        flex-direction: column;
+    }
+}
+
+article.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+}
+
+.content {
+    width: 100%;
+    max-width: calc(100vw - 32rem);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 2rem;
+}
+
+main {
+    display: flex;
+    //overflow: hidden;
+    flex-direction: column;
+
+    &.funnel {
+        //max-width: 80rem;
+        //margin: 0 auto;
+        flex-direction: column;
+    }
+
+    &.content-wrapper {
+        flex-direction: column;
+        padding-inline: 2rem;
+    }
+
+    article {
+        &.login {
+            background: white;
+            //box-shadow: 0 1rem 1rem 0 #283e4a88;
+            width: 24rem;
+            margin: auto;
+            min-height: 35rem;
+            //padding: 3rem 5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            hgroup {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+
+                h1 {
+                    font-weight: 100;
+                    font-size: 3rem;
+                    margin: 0 0 2rem 0;
+                }
+
+                h2 {
+                    font-weight: 300;
+                    font-size: 1.1rem;
+                    margin: 0 1.1rem 0 0;
+                }
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                flex-grow: 1;
+            }
+
+            section {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                width: 100%;
+
+                &.forgot-password {
+                    align-items: flex-end;
+                    margin: 0 0 4rem 0;
+
+                    a {
+                        font-size: 0.8rem;
+                    }
+                }
+
+                .input-group {
+                    min-height: 3rem;
+                    align-self: center;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 1rem 0px;
+
+                    input {
+                        margin: 0px 0px 2rem 0px;
+                        padding: 1rem;
+                        width: 100%;
+                    }
+                }
+            }
+
+            footer {
+                width: 100%;
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+button {
+    cursor: pointer;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 0;
+}
+
+hr {
+    border-color: $border-color;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+}
+
+h1 {
+    font-size: $h1-font-size;
+    font-weight: $h1-font-weight;
+}
+
+.newsletter-subscription {
+    margin: 6rem auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: calc(100vw - 32rem);
+
+    .title {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .left-panel {
+        margin-inline: 2rem 1rem;
+        width: 67%;
+    }
+
+    .right-panel {
+        margin-inline: 1rem 2rem;
+        display: flex;
+        width: 33%;
+        align-items: center;
+        justify-content: flex-end;
+
+        .input-wrapper {
+            position: relative;
+            margin-inline-end: 1rem;
+            width: 100%;
+        }
+
+        input[type=email] {
+            line-height: 1.15;
+            padding: 0.5rem;
+            width: 100%;
+            margin-inline-end: 2rem;
+        }
+    }
+}
+
+.social-networks-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6rem auto;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .social-networks {
+        display: flex;
+
+        .social-network {
+            width: 3rem;
+            margin-inline: 1.5rem;
+        }
+    }
+}
+
+footer {
+    padding: 1rem;
+    margin-block: auto 0;
+}
+
+.payment-modes-wrapper {
+    justify-content: center;
+    display: flex;
+
+    svg {
+        width: 3rem;
+        margin-inline: 1.5rem;
+    }
+}

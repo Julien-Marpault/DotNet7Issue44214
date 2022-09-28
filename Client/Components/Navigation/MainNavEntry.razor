@@ -1,0 +1,17 @@
+﻿
+<div class="main-nav-entry">
+    <NavLink Match="NavLinkMatch.All" ActiveClass="active" href="@Link">
+        @if (Icon != null)
+        {
+            @Icon
+        }
+        @Label
+    </NavLink>
+</div>
+
+@code {
+    [Parameter] public string Label { get; set; }
+    [Parameter] public string Link { get; set; }
+    [Parameter] public RenderFragment Icon { get; set; }
+
+}

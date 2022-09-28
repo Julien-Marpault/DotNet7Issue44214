@@ -1,0 +1,20 @@
+﻿@if (string.IsNullOrEmpty(Link))
+{
+    <div class="logo">
+        @ChildContent
+    </div>
+}
+else
+{
+    <a href="@Link">
+        <div class="logo">
+            @ChildContent
+        </div>
+    </a>
+
+}
+
+@code {
+    [Parameter] public string Link { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
+}

@@ -1,0 +1,1934 @@
+﻿/*$cta-color: rgb(241,186,58);*/
+/*$margin-l: 3rem;
+$margin: 1.5rem;
+$margin-s: 1rem;
+$margin-xs: 0.5rem;*/
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+.loader {
+  width: 14rem;
+  margin: auto;
+}
+.loader .loader-text {
+  text-align: center;
+}
+
+/*$cta-color: rgb(241,186,58);*/
+/*$margin-l: 3rem;
+$margin: 1.5rem;
+$margin-s: 1rem;
+$margin-xs: 0.5rem;*/
+@font-face {
+  font-family: "Century Gothic";
+  src: url("/fonts/CenturyGothicRegular.eot") format("embedded-opentype"), url("/fonts/CenturyGothicRegular.ttf") format("truetype");
+}
+* {
+  font: 100 1rem "Segoe UI";
+  color: #2a3e59;
+  letter-spacing: 0.15rem;
+}
+
+h1:focus-visible {
+  outline: none;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/*$cta-color: rgb(241,186,58);*/
+/*$margin-l: 3rem;
+$margin: 1.5rem;
+$margin-s: 1rem;
+$margin-xs: 0.5rem;*/
+.cta {
+  background: #2a3e59;
+  color: white;
+  padding: 0.5rem;
+  border: 1px solid #2a3e59;
+  justify-content: center;
+  text-align: center;
+}
+.cta:hover {
+  background: white;
+  color: #2a3e59;
+}
+.cta.large {
+  width: 15rem;
+}
+.cta.full-width {
+  width: 100%;
+}
+
+/*$cta-color: rgb(241,186,58);*/
+/*$margin-l: 3rem;
+$margin: 1.5rem;
+$margin-s: 1rem;
+$margin-xs: 0.5rem;*/
+.scroll-y {
+  overflow: hidden scroll;
+  max-height: 100vh;
+}
+
+.scroll-x {
+  overflow: scroll hidden;
+  max-width: 100vw;
+}
+
+.scroll {
+  overflow: auto;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.scrollbar-1::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: white;
+}
+.scrollbar-1::-webkit-scrollbar {
+  width: 6px;
+  background-color: white;
+}
+.scrollbar-1::-webkit-scrollbar-thumb {
+  background-color: #2a3e59;
+}
+
+/*$cta-color: rgb(241,186,58);*/
+/*$margin-l: 3rem;
+$margin: 1.5rem;
+$margin-s: 1rem;
+$margin-xs: 0.5rem;*/
+.edit-form {
+  height: 100%;
+  position: relative;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form .input-group-wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+form .input-group-wrapper .input-group:not(.inline) {
+  flex-grow: 1;
+}
+form .input-group-wrapper .input-group:not(:last-child) {
+  margin-inline-end: 2rem;
+}
+form .input-group-wrapper .input-group:first-of-type input[type=radio] + label {
+  left: 2rem;
+}
+form .input-group-wrapper .input-group:not(:first-of-type) input[type=radio] + label {
+  left: 4rem;
+}
+form .input-group {
+  /*align-items: center;*/
+  display: flex;
+  margin: 1rem 0px;
+}
+form .input-group:not(.inline) {
+  flex-direction: column;
+}
+form .input-group.inline {
+  flex-direction: row;
+  align-items: center;
+}
+form .edit-line {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+form .edit-line input {
+  margin-right: 2rem;
+}
+form .edit-line .delete-icon {
+  position: absolute;
+  right: 0px;
+  top: 19px;
+  cursor: pointer;
+}
+form .edit-line .delete-icon svg {
+  height: 24px;
+}
+form input, form select {
+  padding: 1rem;
+}
+form input:not([type=radio]), form select:not([type=radio]) {
+  margin: 0px 0px 2rem 0px;
+}
+form input.invalid, form select.invalid {
+  margin-bottom: 1rem;
+}
+form input:-webkit-autofill, form input:-webkit-autofill:hover, form input:-webkit-autofill:focus, form input:-webkit-autofill:active, form select:-webkit-autofill, form select:-webkit-autofill:hover, form select:-webkit-autofill:focus, form select:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+form input:not([type=radio]), form select:not([type=radio]) {
+  width: 100%;
+  max-width: 30rem;
+}
+form input[type=radio], form select[type=radio] {
+  width: 2rem;
+}
+form .siret-input {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 30rem;
+}
+form .siret-input input {
+  box-sizing: content-box;
+}
+form .siret-input input:no(:last-of-type) {
+  padding: 1rem 0 1rem 1rem;
+}
+form .siret-input input:last-of-type {
+  padding: 1rem;
+}
+form textarea {
+  /*margin: $margin-l;*/
+  margin: 0px 0px 2rem 0px;
+  padding: 1rem;
+  border: 1px solid white;
+  width: 100%;
+}
+form textarea.invalid {
+  margin-bottom: 1rem;
+}
+form input[type=checkbox]:not(:checked),
+form input[type=checkbox]:checked {
+  display: none;
+}
+form input[type=checkbox]:not(:checked) + label,
+form input[type=checkbox]:checked + label {
+  position: relative;
+  left: 1.5em;
+  margin: 0px 0px 1rem 0px;
+  width: 100%;
+  cursor: pointer;
+  pointer-events: all;
+  font-size: 1em;
+  color: #2a3e59;
+  top: 0px;
+}
+form input[type=checkbox]:not(:checked) + label:after,
+form input[type=checkbox]:checked + label:after {
+  position: absolute;
+  content: "";
+  width: 0.75em;
+  height: 0.75em;
+  border: 1px solid #2a3e59;
+  top: 0.25em;
+  left: -1.5em;
+}
+form input[type=checkbox]:checked + label:after {
+  background: #2a3e59;
+}
+form .input-list-component {
+  max-width: 30rem;
+}
+form .input-list-component .table-cell {
+  padding: 1rem;
+}
+form ul {
+  max-width: 30rem;
+}
+form ul li {
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+  /* &:hover {
+      background: map-get($base-colors,"light-6");
+      color: $font-light-color;
+
+      & > .list-remove-icon {
+          opacity: 1;
+
+          svg {
+              fill: $font-light-color;
+          }
+      }
+  }*/
+}
+form ul li .list-remove-icon {
+  cursor: pointer;
+}
+form ul li .list-remove-icon svg {
+  height: 1rem;
+  vertical-align: bottom;
+}
+form button {
+  margin: auto 0 0 0;
+}
+form .validation-message {
+  color: #c00000;
+  font-size: 0.8rem;
+  font-weight: 400;
+  bottom: 0.75rem;
+  position: absolute;
+  left: 1rem;
+}
+
+/*$cta-color: rgb(241,186,58);*/
+/*$margin-l: 3rem;
+$margin: 1.5rem;
+$margin-s: 1rem;
+$margin-xs: 0.5rem;*/
+input, textarea, select {
+  outline: none;
+}
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+textarea {
+  padding: 0.6666666667rem;
+}
+
+.input-group {
+  position: relative;
+}
+
+input, select {
+  display: block;
+  border: none;
+}
+input:not([type=radio]) ~ label, select:not([type=radio]) ~ label {
+  position: absolute;
+  transition: 0.2s ease all;
+  font-size: 1em;
+  top: calc(1rem + 2px);
+  left: 0.6666666667rem;
+  pointer-events: none;
+  color: silver;
+  background: white;
+  padding: 0px 0.3333333333rem;
+}
+input:not([type=radio]):valid ~ label, input:not([type=radio]):focus ~ label, input:not([type=radio]):read-only ~ label, input:not([type=radio]):disabled ~ label, select:not([type=radio]):valid ~ label, select:not([type=radio]):focus ~ label, select:not([type=radio]):read-only ~ label, select:not([type=radio]):disabled ~ label {
+  font-size: 0.8em;
+  top: 3.15em;
+}
+
+.language-selector {
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+}
+
+#passwordSwitch {
+  position: absolute;
+  width: 1.8rem;
+  right: 1rem;
+  top: 1.3rem;
+  cursor: pointer;
+}
+
+[type=radio] {
+  cursor: pointer;
+}
+[type=radio] ~ label {
+  cursor: pointer;
+}
+
+/*$cta-color: rgb(241,186,58);*/
+/*$margin-l: 3rem;
+$margin: 1.5rem;
+$margin-s: 1rem;
+$margin-xs: 0.5rem;*/
+input[type=checkbox]:not(:checked),
+input[type=checkbox]:checked {
+  display: none;
+}
+input[type=checkbox]:not(:checked) + label,
+input[type=checkbox]:checked + label {
+  position: relative;
+  left: 1.5em;
+  margin: 0px 0px 1rem 0px;
+  width: 100%;
+  cursor: pointer;
+  pointer-events: all;
+  font-size: 1em;
+  color: #2a3e59;
+  top: 0px;
+}
+input[type=checkbox]:not(:checked) + label:after,
+input[type=checkbox]:checked + label:after {
+  position: absolute;
+  content: "";
+  width: 0.75em;
+  height: 0.75em;
+  border: 1px solid #2a3e59;
+  top: 0.25em;
+  left: -1.5em;
+}
+
+input[type=checkbox]:checked + label:after {
+  background: #2a3e59;
+}
+
+/*$cta-color: rgb(241,186,58);*/
+/*$margin-l: 3rem;
+$margin: 1.5rem;
+$margin-s: 1rem;
+$margin-xs: 0.5rem;*/
+.selectbox-wrapper {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  line-height: 3rem;
+  border-bottom: 1px solid silver;
+  cursor: pointer;
+}
+.selectbox-wrapper .selectbox-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-inline-start: 1rem;
+}
+.selectbox-wrapper .selectbox-text {
+  margin-inline-start: 1rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+.selectbox-wrapper .selectbox-dropdowxn {
+  width: 0.75rem;
+  margin-inline: auto 1rem;
+  transform: translateY(0.1rem);
+}
+.selectbox-wrapper .selectbox-list {
+  position: absolute;
+  background: white;
+}
+
+/*$cta-color: rgb(241,186,58);*/
+/*$margin-l: 3rem;
+$margin: 1.5rem;
+$margin-s: 1rem;
+$margin-xs: 0.5rem;*/
+input[type=radio]:not(:checked),
+input[type=radio]:checked {
+  display: none;
+}
+input[type=radio]:not(:checked) + label,
+input[type=radio]:checked + label {
+  position: relative;
+  margin: 0px 0px 1rem 0px;
+  width: 100%;
+  cursor: pointer;
+  pointer-events: all;
+  font-size: 1em;
+  color: #2a3e59;
+  top: 0px;
+}
+input[type=radio]:not(:checked) + label:after,
+input[type=radio]:checked + label:after {
+  position: absolute;
+  content: "";
+  width: 0.55em;
+  height: 0.55em;
+  top: 0.45em;
+  left: -1.5em;
+  border-radius: 50%;
+  border: none;
+  outline-color: #d1aa65;
+  outline-width: 1px;
+  outline-offset: 0.2rem;
+  outline-style: solid;
+}
+
+input[type=radio]:checked + label:after {
+  background: #2a3e59;
+}
+
+/*$cta-color: rgb(241,186,58);*/
+/*$margin-l: 3rem;
+$margin: 1.5rem;
+$margin-s: 1rem;
+$margin-xs: 0.5rem;*/
+.btn-group-horizontal {
+  display: flex;
+}
+.btn-group-horizontal.align-left {
+  justify-content: flex-start;
+}
+.btn-group-horizontal.align-left .btn {
+  margin: 0.5rem;
+}
+.btn-group-horizontal.align-right {
+  justify-content: flex-end;
+}
+.btn-group-horizontal.align-right .btn {
+  margin: 0.5rem;
+}
+.btn-group-horizontal.space-between {
+  justify-content: space-between;
+}
+
+.btn {
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 0;
+}
+
+a.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-default, .btn-inverse, .btn-square {
+  height: 2rem;
+}
+
+.btn-default, .btn-inverse {
+  line-height: 2rem;
+  padding: 0 1rem;
+  font-weight: 400;
+  width: fit-content;
+}
+
+.btn-square {
+  width: 2rem;
+  padding: 0.3333333333rem;
+}
+
+.btn-full-width {
+  line-height: 2.5rem;
+  padding: 0 1rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+.btn-default {
+  background: #2a3e59;
+}
+.btn-default:hover {
+  background: #1a2636;
+}
+
+.btn-inverse {
+  background: white;
+  color: #2a3e59;
+  border: 1px solid #2a3e59;
+}
+
+.btn-ok {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+.btn-ok:disabled {
+  background: #e6e6e6;
+  color: silver;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.btn-ok:disabled:hover, .btn-ok:disabled:focus {
+  color: silver;
+}
+.btn-ok:disabled:before {
+  content: none;
+}
+.btn-ok:disabled:after {
+  content: none;
+}
+.btn-ok:before {
+  position: absolute;
+  content: "";
+  background: #2a3e59;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+}
+.btn-ok:after {
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  content: "";
+  opacity: 0;
+  width: 0%;
+  background: #2a3e59;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  z-index: -1;
+}
+.btn-ok:hover, .btn-ok:focus {
+  color: white;
+}
+.btn-ok:hover:after, .btn-ok:focus:after {
+  opacity: 1;
+  width: 100%;
+  left: 0;
+}
+
+.btn-plus {
+  padding: 0.3rem;
+}
+.btn-plus svg {
+  fill: white;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.btn-filter {
+  padding: 0.5rem;
+}
+.btn-filter svg {
+  fill: white;
+  width: 1rem;
+  height: 1rem;
+}
+
+.btn-fixed-br,
+.btn-fixed-tr,
+.btn-fixed-bL,
+.btn-fixed-tl {
+  position: absolute;
+}
+
+.btn-fixed-br,
+.btn-fixed-tr {
+  right: 2rem;
+}
+
+.btn-fixed-bL,
+.btn-fixed-tl {
+  left: 2rem;
+}
+
+.btn-fixed-br,
+.btn-fixed-bL {
+  bottom: 2rem;
+}
+
+.btn-fixed-tr,
+.btn-fixed-tl {
+  top: 2rem;
+}
+
+/*$cta-color: rgb(241,186,58);*/
+/*$margin-l: 3rem;
+$margin: 1.5rem;
+$margin-s: 1rem;
+$margin-xs: 0.5rem;*/
+/*.border-right,
+.border-left,
+.border-top,
+.border-bottom {
+    border-style: solid;
+    border-color: $border-color;
+}
+
+.border-right-dark,
+.border-left-dark,
+.border-top-dark,
+.border-bottom-dark {
+    border-style: solid;
+    border-color: $border-color-dark;
+}*/
+.border-right {
+  border-right: 1px solid silver;
+}
+
+.border-right-dark {
+  border-right: 1px solid #a0a0a0;
+}
+
+.border-left {
+  border-left: 1px solid silver;
+}
+
+.border-left-dark {
+  border-left: 1px solid #a0a0a0;
+}
+
+.border-top {
+  border-top: 1px solid silver;
+}
+
+.border-top-dark {
+  border-top: 1px solid #a0a0a0;
+}
+
+.border-bottom {
+  border-bottom: 1px solid silver;
+}
+
+.border-bottom-dark {
+  border-bottom: 1px solid #a0a0a0;
+}
+
+.selected-border-right,
+.selected-border-left,
+.selected-border-top,
+.selected-border-bottom {
+  border-color: #2a3e59;
+}
+
+.selected-border-right {
+  border-right-width: 3px;
+  border-right-style: solid;
+}
+
+.selected-border-left {
+  border-left-width: 3px;
+  border-left-style: solid;
+}
+
+.selected-border-top {
+  border-top-width: 3px;
+  border-top-style: solid;
+}
+
+.selected-border-bottom {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+}
+
+/*$cta-color: rgb(241,186,58);*/
+/*$margin-l: 3rem;
+$margin: 1.5rem;
+$margin-s: 1rem;
+$margin-xs: 0.5rem;*/
+* {
+  box-sizing: border-box;
+}
+
+html, body, #app, main {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#app {
+  display: flex;
+  overflow: hidden;
+}
+#app.side-nav-first {
+  flex-direction: row;
+}
+#app.top-nav-first {
+  flex-direction: column;
+}
+
+article.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+}
+
+.content {
+  width: 100%;
+  max-width: calc(100vw - 32rem);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+main.funnel {
+  flex-direction: column;
+}
+main.content-wrapper {
+  flex-direction: column;
+  padding-inline: 2rem;
+}
+main article.login {
+  background: white;
+  width: 24rem;
+  margin: auto;
+  min-height: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main article.login hgroup {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+main article.login hgroup h1 {
+  font-weight: 100;
+  font-size: 3rem;
+  margin: 0 0 2rem 0;
+}
+main article.login hgroup h2 {
+  font-weight: 300;
+  font-size: 1.1rem;
+  margin: 0 1.1rem 0 0;
+}
+main article.login form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-grow: 1;
+}
+main article.login section {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+}
+main article.login section.forgot-password {
+  align-items: flex-end;
+  margin: 0 0 4rem 0;
+}
+main article.login section.forgot-password a {
+  font-size: 0.8rem;
+}
+main article.login section .input-group {
+  min-height: 3rem;
+  align-self: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0px;
+}
+main article.login section .input-group input {
+  margin: 0px 0px 2rem 0px;
+  padding: 1rem;
+  width: 100%;
+}
+main article.login footer {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #2a3e59;
+}
+
+button {
+  cursor: pointer;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+hr {
+  border-color: silver;
+  border-style: solid;
+  border-width: 1px 0 0 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.newsletter-subscription {
+  margin: 6rem auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: calc(100vw - 32rem);
+}
+.newsletter-subscription .title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.newsletter-subscription .left-panel {
+  margin-inline: 2rem 1rem;
+  width: 67%;
+}
+.newsletter-subscription .right-panel {
+  margin-inline: 1rem 2rem;
+  display: flex;
+  width: 33%;
+  align-items: center;
+  justify-content: flex-end;
+}
+.newsletter-subscription .right-panel .input-wrapper {
+  position: relative;
+  margin-inline-end: 1rem;
+  width: 100%;
+}
+.newsletter-subscription .right-panel input[type=email] {
+  line-height: 1.15;
+  padding: 0.5rem;
+  width: 100%;
+  margin-inline-end: 2rem;
+}
+
+.social-networks-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6rem auto;
+}
+.social-networks-wrapper h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.social-networks-wrapper .social-networks {
+  display: flex;
+}
+.social-networks-wrapper .social-networks .social-network {
+  width: 3rem;
+  margin-inline: 1.5rem;
+}
+
+footer {
+  padding: 1rem;
+  margin-block: auto 0;
+}
+
+.payment-modes-wrapper {
+  justify-content: center;
+  display: flex;
+}
+.payment-modes-wrapper svg {
+  width: 3rem;
+  margin-inline: 1.5rem;
+}
+
+/*$cta-color: rgb(241,186,58);*/
+/*$margin-l: 3rem;
+$margin: 1.5rem;
+$margin-s: 1rem;
+$margin-xs: 0.5rem;*/
+.logo {
+  padding: 0 0 2rem 0;
+  margin-inline-end: 2rem;
+}
+.logo .logo-main {
+  font: 100 3rem "Century Gothic";
+  text-transform: uppercase;
+  line-height: 3rem;
+  font-weight: 900;
+}
+.logo .logo-tagline {
+  font: 100 2.3rem "Century Gothic";
+  text-transform: uppercase;
+  line-height: 2.3rem;
+}
+
+.side-nav {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  z-index: 100;
+}
+.side-nav .side-nav-entry {
+  align-items: center;
+  line-height: 4rem;
+}
+.side-nav .side-nav-entry svg {
+  height: 1rem;
+}
+.side-nav .side-nav-entry svg path {
+  fill: #2a3e59;
+}
+.side-nav-first .main-nav {
+  padding: 1rem 1rem 7rem 1rem;
+}
+
+.top-nav-first .main-nav {
+  padding: 1rem;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.main-nav .left-part {
+  display: flex;
+}
+.main-nav .right-part {
+  display: flex;
+}
+.main-nav .search-bar {
+  margin-right: auto;
+  margin-block-start: 0.5rem;
+  position: relative;
+  width: 100%;
+  max-width: 17rem;
+}
+.main-nav .search-bar .fa-search {
+  height: 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main-nav .search-bar input[type=text] {
+  border: none;
+  border-bottom: 1px solid silver;
+  width: 100%;
+}
+.main-nav .search-bar input[type=text]:focus-visible {
+  outline: none;
+}
+.main-nav .search-bar input[type=text]:focus-visible > search-underline {
+  width: 100%;
+  border-color: #2a3e59;
+  border-width: 2px;
+}
+.main-nav .nav-entry {
+  text-transform: uppercase;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  height: 1rem;
+}
+.main-nav .nav-entry:hover {
+  border-bottom: 1px solid;
+  /* span {
+      font-weight: 400;
+  }*/
+}
+.main-nav .nav-entry.active {
+  border-bottom: 1px solid;
+}
+.main-nav .nav-entry.active span {
+  font-weight: 400;
+}
+.main-nav .nav-entry svg {
+  height: 1rem;
+  margin-inline-end: 0.5rem;
+}
+.main-nav .nav-entry svg path {
+  fill: #2a3e59;
+}
+
+/*$cta-color: rgb(241,186,58);*/
+/*$margin-l: 3rem;
+$margin: 1.5rem;
+$margin-s: 1rem;
+$margin-xs: 0.5rem;*/
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  max-height: calc(100vh - 18rem);
+}
+.carousel ul {
+  display: flex;
+  max-height: calc(100vh - 18rem);
+}
+.carousel ul li {
+  display: flex;
+}
+.carousel ul li img {
+  width: 100vw;
+  align-self: center;
+}
+.carousel .previous-button, .carousel .next-button {
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  fill: white;
+  padding: 1rem;
+  cursor: pointer;
+}
+.carousel .previous-button svg, .carousel .previous-button img, .carousel .next-button svg, .carousel .next-button img {
+  width: 2rem;
+  height: 2rem;
+}
+.carousel .next-button {
+  right: 0;
+}
+.carousel .selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.carousel .selector .selector-entry {
+  background: #2a3e59;
+  width: 1rem;
+  height: 1rem;
+  align-items: flex-end;
+  margin: 1rem 0.5rem;
+}
+
+/*$cta-color: rgb(241,186,58);*/
+/*$margin-l: 3rem;
+$margin: 1.5rem;
+$margin-s: 1rem;
+$margin-xs: 0.5rem;*/
+.catalog {
+  display: flex;
+  justify-content: space-around;
+}
+
+.thumbnail {
+  display: inline-block;
+  margin-top: 2rem;
+  position: relative;
+}
+.thumbnail .polaroid {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.thumbnail .polaroid:before {
+  transform: rotate(-6deg);
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+}
+.thumbnail .polaroid:after {
+  transform: rotate(6deg);
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+}
+.thumbnail .polaroid > img {
+  max-width: 100%;
+  height: auto;
+}
+.thumbnail .polaroid .icons {
+  position: absolute;
+  right: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  z-index: 10;
+}
+.thumbnail .polaroid .icons .addToCart svg, .thumbnail .polaroid .icons .addToWishlist svg {
+  height: 1rem;
+  padding-inline-start: 1rem;
+}
+.thumbnail .polaroid .caption {
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.thumbnail .polaroid .caption .line1 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: gray;
+}
+.thumbnail .polaroid .caption .line2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-start: 0.75rem;
+}
+.thumbnail .polaroid .caption .price {
+  font-size: 1.8rem;
+}
+
+/*$cta-color: rgb(241,186,58);*/
+/*$margin-l: 3rem;
+$margin: 1.5rem;
+$margin-s: 1rem;
+$margin-xs: 0.5rem;*/
+.breadcrumb {
+  display: flex;
+  margin-block: 1rem;
+}
+.breadcrumb li {
+  margin-inline: 0 0.5rem;
+}
+
+/*$cta-color: rgb(241,186,58);*/
+/*$margin-l: 3rem;
+$margin: 1.5rem;
+$margin-s: 1rem;
+$margin-xs: 0.5rem;*/
+.product {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.product .product-description {
+  display: flex;
+  flex-direction: column;
+  width: 67%;
+}
+.product .product-description .image {
+  width: 100%;
+}
+.product .product-description .image img {
+  width: 100%;
+}
+.product .product-properties-wrapper {
+  margin-inline: 3rem 0;
+  width: 33%;
+}
+.product .product-properties-wrapper .product-properties {
+  position: sticky;
+  top: 5rem;
+}
+.product .product-properties-wrapper .product-properties h1 {
+  margin-block-start: 0;
+}
+.product .product-properties-wrapper .product-properties .sales-price {
+  color: #2a3e59;
+  font-size: 1.5rem;
+}
+.product .product-properties-wrapper .product-properties .short-description {
+  margin-block: 2rem;
+}
+.product .product-properties-wrapper .product-properties .properties {
+  margin-block: 3rem;
+}
+.product .product-properties-wrapper .product-properties ul.properties-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.product .product-properties-wrapper .product-properties ul.properties-wrapper li.property.color {
+  width: calc(66% - 1rem);
+}
+.product .product-properties-wrapper .product-properties ul.properties-wrapper li.property.size {
+  width: calc(33% - 1rem);
+  position: relative;
+}
+.product .product-properties-wrapper .product-properties ul.properties-wrapper div.property.size {
+  width: 100%;
+  position: absolute;
+  background: white;
+}
+.product .product-properties-wrapper .product-properties .delivery {
+  margin-block: 2rem;
+  font-size: 0.8rem;
+}
+.product .product-properties-wrapper .product-properties .delivery strong {
+  font-weight: 400;
+}
+.product .product-properties-wrapper .product-properties ul.strong-points {
+  margin-block: 1rem;
+}
+.product .product-properties-wrapper .product-properties ul.strong-points li {
+  padding-block: 1rem;
+  padding-inline-start: 0.5rem;
+  font-size: 0.8rem;
+  border-bottom: 1px solid #9aa5b5;
+}
+.product .product-details {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-block: 3rem;
+  padding: 3rem;
+  border: 1px solid silver;
+}
+.product .product-details h2 {
+  font-weight: 400;
+}
+.product .product-details .left-panel {
+  width: 60%;
+}
+.product .product-details .right-panel {
+  width: fit-content;
+}
+.product .product-details .right-panel ul {
+  width: 100%;
+}
+.product .product-details .right-panel ul li {
+  justify-content: space-between;
+  display: flex;
+}
+
+/*$cta-color: rgb(241,186,58);*/
+/*$margin-l: 3rem;
+$margin: 1.5rem;
+$margin-s: 1rem;
+$margin-xs: 0.5rem;*/
+.nav-entry.cart-nav-entry, .nav-entry.cart-nav-entry {
+  position: relative;
+}
+.nav-entry.cart-nav-entry .itemCount, .nav-entry.cart-nav-entry .itemCount {
+  position: absolute;
+  left: 1.5rem;
+  bottom: -0.25rem;
+  background: #c00000;
+  color: white;
+  font-size: 0.5rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 0.05rem;
+}
+
+.mini-cart-container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+.mini-cart-container .mini-cart-overlay {
+  background: white;
+  opacity: 0.5;
+  display: flex;
+  flex-grow: 1;
+}
+.mini-cart-container .mini-cart {
+  background: white;
+  width: 33vw;
+  /*height: 100vh;*/
+  margin-block-start: 4rem;
+  padding-inline: 3rem;
+  min-width: 30rem;
+  display: flex;
+  flex-direction: column;
+}
+.mini-cart-container .mini-cart header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mini-cart-container .mini-cart header span {
+  font-size: 0.8rem;
+}
+.mini-cart-container .mini-cart article {
+  flex-grow: 1;
+}
+.mini-cart-container .mini-cart .mini-cart-entry {
+  display: flex;
+  padding-block: 1rem;
+}
+.mini-cart-container .mini-cart .mini-cart-entry img {
+  max-width: 50%;
+}
+.mini-cart-container .mini-cart .mini-cart-entry-labels {
+  padding-inline-start: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+.mini-cart-container .mini-cart .mini-cart-entry-labels span:first-of-type {
+  padding-block: 1rem 0;
+}
+.mini-cart-container .mini-cart .mini-cart-entry-labels span:last-of-type {
+  padding-block: 1.5rem 1rem;
+}
+.mini-cart-container .mini-cart .mini-cart-entry-labels .name {
+  text-transform: capitalize;
+}
+.mini-cart-container .mini-cart .mini-cart-entry-labels .price, .mini-cart-container .mini-cart .mini-cart-entry-labels .quantity {
+  font-size: 0.7rem;
+}
+.mini-cart-container .mini-cart .mini-cart-entry-labels .price {
+  font-weight: 500;
+}
+.mini-cart-container .mini-cart .mini-cart-entry-labels .fa-times {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.mini-cart-container .mini-cart footer {
+  margin-block-end: 4rem;
+}
+.mini-cart-container .mini-cart footer .shipping-fees, .mini-cart-container .mini-cart footer .total {
+  display: flex;
+  justify-content: space-between;
+}
+.mini-cart-container .mini-cart footer .shipping-fees {
+  padding-block: 1rem 0.5rem;
+}
+.mini-cart-container .mini-cart footer .total {
+  padding-block: 0.5rem 1rem;
+}
+.mini-cart-container .mini-cart footer .cta {
+  margin: 0 auto;
+  display: flex;
+}
+
+.cart {
+  padding-inline: 2rem;
+  max-width: 80rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.cart header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.cart header hr {
+  width: 100%;
+}
+.cart .cart-content {
+  display: flex;
+}
+.cart .cart-content article {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.cart .cart-content aside {
+  border: 0.5rem solid #e6e6e6;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.cart .cart-content aside div {
+  height: 2rem;
+  display: flex;
+}
+.cart .cart-content aside div span {
+  font-size: 0.8rem;
+}
+.cart .cart-content aside div:last-of-type {
+  flex-grow: 1;
+}
+.cart .cart-content aside div:last-of-type span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.cart .cart-content aside div span:first-of-type {
+  flex-grow: 1;
+}
+.cart .cart-entry {
+  display: flex;
+  padding-block: 1rem;
+}
+.cart .cart-entry img {
+  height: 150px;
+}
+.cart .cart-entry > .cart-entry-labels {
+  margin-inline: 3rem 0;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  align-items: center;
+}
+.cart .cart-entry > .cart-entry-labels > .name {
+  width: calc(100% - 24rem);
+}
+.cart .cart-entry > .cart-entry-labels > .quantity, .cart .cart-entry > .cart-entry-labels .price {
+  width: 12rem;
+  display: flex;
+  flex-direction: column;
+}
+.cart .cart-entry > .cart-entry-labels > .quantity span.name, .cart .cart-entry > .cart-entry-labels .price span.name {
+  color: gray;
+  font-size: 0.8rem;
+  margin-block: 0 1rem;
+}
+.cart .cart-entry > .cart-entry-labels .quantity {
+  align-items: center;
+}
+.cart .cart-entry > .cart-entry-labels .quantity .modify {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cart .cart-entry > .cart-entry-labels .quantity .modify span:first-of-type {
+  line-height: 1.2rem;
+  color: #d1aa65;
+  cursor: pointer;
+  user-select: none;
+}
+.cart .cart-entry > .cart-entry-labels .quantity .modify span:nth-of-type(2) {
+  width: 7ch;
+  text-align: center;
+}
+.cart .cart-entry > .cart-entry-labels .quantity .modify span:last-of-type {
+  color: #d1aa65;
+  cursor: pointer;
+  user-select: none;
+}
+.cart .cart-entry > .cart-entry-labels .price {
+  align-items: flex-start;
+}
+.cart .cart-entry > .cart-entry-labels .price span:last-of-type {
+  font-weight: 500;
+}
+
+/*$cta-color: rgb(241,186,58);*/
+/*$margin-l: 3rem;
+$margin: 1.5rem;
+$margin-s: 1rem;
+$margin-xs: 0.5rem;*/
+.funnel-breadcrumb-wrapper {
+  max-width: 80rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.funnel-breadcrumb {
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+}
+.funnel-breadcrumb div {
+  padding: 2rem;
+  white-space: nowrap;
+  color: silver;
+}
+.funnel-breadcrumb div.active {
+  color: #202020;
+  font-weight: 400;
+}
+.funnel-breadcrumb hr {
+  width: 100%;
+  border-color: silver;
+}
+.funnel-breadcrumb hr.active {
+  border-color: #202020;
+}
+
+/*$cta-color: rgb(241,186,58);*/
+/*$margin-l: 3rem;
+$margin: 1.5rem;
+$margin-s: 1rem;
+$margin-xs: 0.5rem;*/
+.shipping-page {
+  height: 100%;
+}
+.shipping-page .shipping-page-content {
+  width: 100%;
+  max-width: 75.5rem;
+  margin-inline: auto;
+  margin-block: 0 3rem;
+}
+.shipping-page .shipping-page-content .shipping-method-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+  margin-block: 4rem;
+}
+.shipping-page .shipping-page-content .shipping-method-wrapper .shipping-method {
+  text-align: center;
+  border: 1px solid #d1aa65;
+  padding: 3rem;
+  margin-inline: 0.5rem;
+  width: 15rem;
+}
+.shipping-page .shipping-page-content .shipping-method-wrapper .shipping-method [type=radio]:not(:checked), .shipping-page .shipping-page-content .shipping-method-wrapper .shipping-method [type=radio]:checked {
+  width: 100%;
+}
+.shipping-page .shipping-page-content .shipping-method-wrapper .shipping-method [type=radio]:not(:checked) + label, .shipping-page .shipping-page-content .shipping-method-wrapper .shipping-method [type=radio]:checked + label {
+  left: 0;
+}
+.shipping-page .shipping-page-content .shipping-method-wrapper .shipping-method [type=radio]:not(:checked) + label:after, .shipping-page .shipping-page-content .shipping-method-wrapper .shipping-method [type=radio]:checked + label:after {
+  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: none;
+  outline-color: #d1aa65;
+  outline-width: 1px;
+  outline-offset: 0.4rem;
+  outline-style: solid;
+}
+.shipping-page .shipping-page-content .shipping-method-wrapper .shipping-method [type=radio]:checked + label:after {
+  background: #d1aa65;
+}
+.shipping-page .shipping-page-content .shipping-method-wrapper .shipping-method .method-name {
+  margin-block-start: 1.5rem;
+}
+
+.reinsurance {
+  display: flex;
+  justify-content: space-around;
+  border-block: 1px solid silver;
+}
+.reinsurance section {
+  text-align: center;
+  padding-block: 2rem;
+  text-align: center;
+  width: 33.33333%;
+}
+.reinsurance section .title {
+  padding-block: 1rem;
+  font-weight: 500;
+  color: #d1aa65;
+  height: 4rem;
+}
+.reinsurance section .content {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reinsurance section .content svg {
+  width: 1.5rem;
+  margin-inline: 0.25rem;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22file:///C:/Azure%2520DevOps/Philame-Creations/Client/Resources/Scss/Variables.scss%22,%22file:///C:/Azure%2520DevOps/Philame-Creations/Client/Resources/Scss/Normalize_8_0_1.scss%22,%22file:///C:/Azure%2520DevOps/Philame-Creations/Client/Resources/Scss/Loader.scss%22,%22file:///C:/Azure%2520DevOps/Philame-Creations/Client/Resources/Scss/Fonts.scss%22,%22file:///C:/Azure%2520DevOps/Philame-Creations/Client/Resources/Scss/Cta.scss%22,%22file:///C:/Azure%2520DevOps/Philame-Creations/Client/Resources/Scss/Scrollbars.scss%22,%22file:///C:/Azure%2520DevOps/Philame-Creations/Client/Resources/Scss/forms.scss%22,%22file:///C:/Azure%2520DevOps/Philame-Creations/Client/Resources/Scss/inputs.scss%22,%22file:///C:/Azure%2520DevOps/Philame-Creations/Client/Resources/Scss/checkbox-wrapper.scss%22,%22file:///C:/Azure%2520DevOps/Philame-Creations/Client/Resources/Scss/SelectBox.scss%22,%22file:///C:/Azure%2520DevOps/Philame-Creations/Client/Resources/Scss/radio-wrapper.scss%22,%22file:///C:/Azure%2520DevOps/Philame-Creations/Client/Resources/Scss/buttons.scss%22,%22file:///C:/Azure%2520DevOps/Philame-Creations/Client/Resources/Scss/borders.scss%22,%22file:///C:/Azure%2520DevOps/Philame-Creations/Client/Resources/Scss/Main.scss%22,%22file:///C:/Azure%2520DevOps/Philame-Creations/Client/Resources/Scss/Navigation.scss%22,%22file:///C:/Azure%2520DevOps/Philame-Creations/Client/Resources/Scss/Carousel.scss%22,%22file:///C:/Azure%2520DevOps/Philame-Creations/Client/Resources/Scss/Thumbnails.scss%22,%22file:///C:/Azure%2520DevOps/Philame-Creations/Client/Resources/Scss/BreadCrumb.scss%22,%22file:///C:/Azure%2520DevOps/Philame-Creations/Client/Resources/Scss/ProductPage.scss%22,%22file:///C:/Azure%2520DevOps/Philame-Creations/Client/Resources/Scss/Cart.scss%22,%22file:///C:/Azure%2520DevOps/Philame-Creations/Client/Resources/Scss/FunnelBreadcrumb.scss%22,%22file:///C:/Azure%2520DevOps/Philame-Creations/Client/Resources/Scss/ShippingPage.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%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A;EACI;;AAEA;EACI;EACA;;AAKZ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;;AAQR;EACI;;AAGJ;EACI;EAEA;EACA;EACA;;AAEA;EACI,Yf/CA;EegDA;EACA;EACA;EACA;;;AflDZ;AAgCA;AAAA;AAAA;AAAA;AgBvCA;EACI;EACA;;;AAGJ;EAEI;EACA;EACA;;AAGA;EACI;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;;AAGI;EACI;EACA;;AAKZ;EACI;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;;AAGJ;EACI;;;AhB7EhB;AAgCA;AAAA;AAAA;AAAA;AiBvCA;EACI;EACA;;AAEA;EACI;;;AjBER;AAgCA;AAAA;AAAA;AAAA;AkBvCA;EACI;EACA;EAKA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;;AAEA;EACI;;AAKZ;EACI;EACA;;AAEA;EACI;EACA;;AAEA;EACI;;AAGJ;EACI,OlB9BJ;EkB+BI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;EACA;;AAIQ;EACI;;AAGJ;EACI;EACA;;AAOJ;EACI;EACA;EACA;;AAMhB;EACI;EACA;;AAEA;EACI;;AAIR;EACI;;AAEA;EACI;EACA;EACA;EACA;;AAMhB;EACI;EACA;EAEA;EACA;EACA;EACA;;AAEA;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAEA;EACI;;AAEA;EACI;EACA;;;AlBpHpB;AAgCA;AAAA;AAAA;AAAA;AmBtCI;EACI;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAKZ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI,YnBdW;EmBeX;EACA;EACA;;AAGJ;EACI,YnBrBW;EmBsBX;AACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;;AAIR;EACI;;AAGJ;EACI;EACA;;AAEA;EACI;;AAIR;EACI;EACA;EACA;EACA;EACA;;AAGI;EACI;;AAGJ;EACI;;AAIR;EACI;;AAGJ;EACI;;AAGJ;EACI,anB3DT;;AmB8DK;EACI;EACA;EACA;;AAIR;EACI;;AAEA;EACI;EACA;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;EACA;;;AAMhB;EACI;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;;AAIR;EACI;;AAEA;EACI;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;;AAEA;EACI;EACA;;AAEA;EACI;;AAGJ;EACI;;AAEA;EACI;EACA,anBzIjB;;AmB8Ia;EACI;;AAOpB;EACI;EACA;;AAEA;EACI;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;;AAGJ;EACI,OnB3JG;EmB4JH;EACA;;AAII;EACI;EACA;EACA;;AAKZ;EACI;;AAEA;EACI;EACA;EACA;;AAGI;EACI;EACA,OnBpOhB;EmBqOgB;EACA;;AAGJ;EACI;EACA;;AAGJ;EACI,OnB/OhB;EmBgPgB;EACA;;AAMhB;EACI;;AAGI;EACI,anB5NjB;;;AA7BP;AAgCA;AAAA;AAAA;AAAA;AoBvCA;EACI;EACA;EACA;;;AAGJ;EACI;EACA;EACA;;AAIA;EACI;EACA;EAEA,OpBhBG;;AoBkBH;EACI,OpBrBD;EoBsBC;;AAIR;EACI;EAEA,cpB3BG;;AoB6BH;EACI,cpBhCD;;;AAQX;AAgCA;AAAA;AAAA;AAAA;AqBvCA;EACI;;AAEA;EACI;EAEA;EACA;EACA;;AAEA;EACI;EAEA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;;AAGI;EACI;;AAEA;EACI;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA,erBnCpB;EqBoCoB;EACA;EACA;;AAOJ;EACI,YrB9CpB;;AqBoDI;EACI;;;AAOpB;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA,OrB1EA;EqB2EA;;AAGJ;EACI;EACA;EACA;EACA;;AAEA;EACI;EACA%22%7D */

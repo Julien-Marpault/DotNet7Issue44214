@@ -1,0 +1,188 @@
+﻿@import "Variables.scss";
+
+.btn-group-horizontal {
+    display: flex;
+
+    &.align-left {
+        justify-content: flex-start;
+
+        .btn {
+            margin: 0.5rem;
+        }
+    }
+
+    &.align-right {
+        justify-content: flex-end;
+
+        .btn {
+            margin: 0.5rem;
+        }
+    }
+
+    &.space-between {
+        justify-content: space-between;
+    }
+}
+
+.btn {
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 0;
+}
+
+a.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-default, .btn-inverse, .btn-square {
+    height: $margin*2;
+}
+
+.btn-default, .btn-inverse {
+    line-height: $margin*2;
+    padding: 0 $margin;
+    font-weight: 400;
+    width: fit-content;
+}
+
+.btn-square {
+    width: $margin*2;
+    padding: $margin-xs;
+}
+
+.btn-full-width {
+    line-height: $margin*2.5;
+    padding: 0 $margin;
+    font-weight: 400;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.btn-default {
+    background: $btn-background;
+
+    &:hover {
+        background: darken($btn-background,10%);
+    }
+}
+
+.btn-inverse {
+    background: $btn-ok-color;
+    color: $btn-ok-background;
+    border: 1px solid $btn-ok-background;
+}
+
+.btn-ok {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    color: $btn-ok-color;
+
+    &:disabled {
+        background: $btn-disabled-background;
+        color: $font-placeholder-color;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+
+        &:hover, &:focus {
+            color: $font-placeholder-color;
+        }
+
+        &:before {
+            content: none;
+        }
+
+        &:after {
+            content: none;
+        }
+    }
+
+    &:before {
+        position: absolute;
+        content: "";
+        background: $btn-ok-background;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -2;
+    }
+
+    &:after {
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        content: "";
+        opacity: 0;
+        width: 0%;
+        background: $btn-ok-hover-background;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        right: 50%;
+        z-index: -1;
+    }
+
+    &:hover, &:focus {
+        color: rgb(255,255,255);
+
+        &:after {
+            opacity: 1;
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+
+.btn-plus {
+    padding: 0.3rem;
+
+    svg {
+        fill: white;
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+}
+
+.btn-filter {
+    padding: 0.5rem;
+
+    svg {
+        fill: white;
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+.btn-ko {
+}
+
+.btn-fixed-br,
+.btn-fixed-tr,
+.btn-fixed-bL,
+.btn-fixed-tl {
+    position: absolute;
+}
+
+.btn-fixed-br,
+.btn-fixed-tr {
+    right: $margin-l;
+}
+
+.btn-fixed-bL,
+.btn-fixed-tl {
+    left: $margin-l;
+}
+
+.btn-fixed-br,
+.btn-fixed-bL {
+    bottom: $margin-l;
+}
+
+.btn-fixed-tr,
+.btn-fixed-tl {
+    top: $margin-l;
+}

@@ -1,0 +1,37 @@
+﻿@import "Variables.scss";
+
+.funnel-breadcrumb-wrapper {
+    max-width: 80rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.funnel-breadcrumb {
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    //max-width: 80rem;
+    //margin: 0 auto;
+
+    div {
+        padding: 2rem;
+        white-space: nowrap;
+        //color: $gray-128;
+        color: $gray-192;
+
+        &.active {
+            color: $black-32;
+            font-weight: 400;
+        }
+    }
+
+    hr {
+        width: 100%;
+        //border-color: $gray-128;
+        border-color: $gray-192;
+
+        &.active {
+            border-color: $black-32;
+        }
+    }
+}

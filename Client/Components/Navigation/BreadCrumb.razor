@@ -1,0 +1,74 @@
+﻿@using System.Text
+@*
+    TODO: Métadonnées JSON + LD
+    https://schema.org/BreadcrumbList
+*@
+@((MarkupString)jsonLdContent)
+
+<ul class="breadcrumb">
+    @foreach (var item in Entries)
+    {
+        <li>
+            @if (item == Entries.Last())
+            {
+                @item.Label
+            }
+            else
+            {
+                <a href="@item.Link">
+                    @item.Label
+                </a>
+            }
+        </li>
+        if (!string.IsNullOrEmpty(Separator) && item != Entries.Last())
+        {
+            <li>
+                @Separator
+            </li>
+        }
+    }
+</ul>
+
+@code {
+    [Inject] private NavigationManager NavigationManager { get; set; }
+    [Parameter]
+    public ICollection<BreadCrumbEntry> Entries { get; set; } = new List<BreadCrumbEntry>();
+
+    [Parameter]
+    public string Separator { get; set; }
+
+    private string jsonLdContent;
+
+    protected override void OnInitialized()
+    {
+        StringBuilder builder = new();
+        builder.Append(@"<script type=""application/ld+json"">
+        {
+        ""@context"": ""https://schema.org"",
+        ""@type"": ""BreadcrumbList"",
+        ""itemListElement"":
+        [");
+        for (var i = 0; i < Entries.Count; i++)
+        {
+            var json = new BreadCrumbListItem
+                {
+                    Position = i,
+                    Item = new BreadCrumbItem
+                    {
+                        Id = NavigationManager.ToAbsoluteUri(Entries.ElementAt(i).Link).ToString(),
+                        Name = Entries.ElementAt(i).Label,
+                    }
+                };
+            builder.Append(JsonSerializer.Serialize(json, new JsonSerializerOptions { WriteIndented = true }));
+            if (i + 1 < Entries.Count)
+            {
+                builder.Append(',');
+            }
+        }
+        builder.Append("]}");
+
+        jsonLdContent = builder.ToString();
+
+        Console.WriteLine(jsonLdContent);
+    }
+}

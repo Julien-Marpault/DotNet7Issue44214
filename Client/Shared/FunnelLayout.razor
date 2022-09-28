@@ -1,0 +1,19 @@
+﻿@inherits LayoutComponentBase
+<nav class="main-nav">
+    <Logo Link="/" />
+</nav>
+<main class="funnel">
+    <FunnelBreadCrumb Steps="steps">
+        @Body
+    </FunnelBreadCrumb>
+</main>
+
+@code {
+    private Dictionary<int, string> steps = new()
+        {
+            { 1, "Votre panier" },
+            { 2, "Identification" },
+            { 3, "Livraison" },
+            { 4, "Paiement" },
+        };
+}

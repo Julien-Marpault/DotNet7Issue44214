@@ -1,0 +1,51 @@
+﻿@page "/catalogue/{Slug}"
+<div class="content">
+    @if (isLoading)
+    {
+        <Loader />
+    }
+    else
+    {
+        <PageTitle>@viewModel.Title</PageTitle>
+
+        <HeadContent>
+            <meta name="description" content="@viewModel.MetaDescription">
+        </HeadContent>
+        <BreadCrumb Separator=" > " Entries="viewModel.BreadCrumbEntries" />
+        <h1>@Slug</h1>
+        <section class="short-description">
+            <p>
+              @viewModel.ShortDescription
+            </p>
+        </section>
+        <section class="catalog">
+
+            @if (isLoading)
+            {
+                <div>
+                    Chargement des articles
+                </div>
+            }
+            else
+            {
+                foreach (ArticleThumbnailViewModel article in viewModel.Articles)
+                {
+                    <ArticleThumbnail Category ="@Slug" Model="@article" Options=options>
+                        <Caption>
+                            <section class="line1">
+                            </section>
+                            <section class="line2">
+                                <section class="title">
+                                    @article.Title
+                                </section>
+                                <section class="price">
+                                    @article.Price.ToString("c2")
+                                </section>
+                            </section>
+                        </Caption>
+                    </ArticleThumbnail>
+                }
+            }
+        </section>
+    }
+</div>

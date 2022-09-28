@@ -1,0 +1,10 @@
+﻿@import 'Variables.scss';
+
+.breadcrumb {
+    display: flex;
+    margin-block: 1rem;
+
+    li {
+        margin-inline: 0 0.5rem;
+    }
+}
